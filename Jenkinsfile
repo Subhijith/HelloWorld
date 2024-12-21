@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Pull code from source control (e.g., Git)
-                git tool: 'Default', url: 'https://github.com/Subhijith/HelloWorld.git'
-            }
-        }
         stage('Build') {
             steps {
                 // Compile the Java application
